@@ -18,7 +18,7 @@ namespace YandexMapTestApp
             // Perform any additional setup after loading the view, typically from a nib.
 
             View.BackgroundColor = UIColor.Yellow;
-            YMKConfiguration.SharedInstance.ApiKey = "1j3yDUQHPj7YCeANE~TmkX3O0d1R2B2sXS5ADZFV8G1KnS7OOIPzzHxKQsd248BmoPKhHy2UXMK2H~MHgSkIw21QtN6aMubjouqBM0tbxvA=";
+            YMKConfiguration.SharedInstance.ApiKey = "YOURKEY";
             var map = new YandexMapKit.YMKMapView();
             map.SetCenterCoordinate(new CoreLocation.CLLocationCoordinate2D(56.5, 84.9), 12, false);
             map.Frame = View.Bounds;
