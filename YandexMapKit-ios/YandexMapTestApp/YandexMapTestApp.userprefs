@@ -1,0 +1,14 @@
+﻿<Properties StartupItem="YandexMapTestApp/YandexMapTestApp.csproj">
+  <MonoDevelop.Ide.Workbench ActiveDocument="YandexMapTestApp/ViewController.cs">
+    <Files>
+      <File FileName="YandexMapTestApp/AppDelegate.cs" Line="1" Column="1" />
+      <File FileName="YandexMapTestApp/ViewController.cs" Line="19" Column="13" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.YandexMapTestApp PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.D0C3E1DC-7ECF-4652-8626-D024CE528EFB" />
+</Properties>

@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YandexMapKitBindings", "Bindings\YandexMapKitBindings.csproj", "{A1ED04E0-44CD-4184-B79C-451FE17A92FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YandexMapTest", "YandexMapTestApp\YandexMapTest.csproj", "{CA28CB1A-453F-4770-ACB6-C81C47A50B33}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A1ED04E0-44CD-4184-B79C-451FE17A92FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1ED04E0-44CD-4184-B79C-451FE17A92FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1ED04E0-44CD-4184-B79C-451FE17A92FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1ED04E0-44CD-4184-B79C-451FE17A92FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA28CB1A-453F-4770-ACB6-C81C47A50B33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA28CB1A-453F-4770-ACB6-C81C47A50B33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA28CB1A-453F-4770-ACB6-C81C47A50B33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA28CB1A-453F-4770-ACB6-C81C47A50B33}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
