@@ -2,7 +2,7 @@
 using Foundation;
 using ObjCRuntime;
 
-namespace WenchaoD.FSCalendar
+namespace WenchaoD.FSCalendarBindings
 {
     [Native]
     public enum FSCalendarFlow : long
