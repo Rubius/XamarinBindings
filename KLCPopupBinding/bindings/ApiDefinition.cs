@@ -7,6 +7,7 @@ using CoreGraphics;
 namespace KLCPopupBinding
 {
     [BaseType(typeof(UIView))]
+	[Protocol]
     public partial interface KLCPopup
     {
         [Export("contentView")]
