@@ -23,7 +23,7 @@ $(TARGET).a: lib$(TARGET)-x86_64.a lib$(TARGET)-i386.a lib$(TARGET)-armv7.a lib$
 	xcrun -sdk iphoneos lipo -create -output $@ $^
 
 
-$(TARGET).dll: $(BINDINGS)/Structs.cs $(BINDINGS)/ApiDefinition.cs $(TARGET).a
+$(TARGET).dll: $(BINDINGS)/Structs.cs $(BINDINGS)/ApiDefinition.cs  $(BINDINGS)/LinkWith.cs $(TARGET).a
 	$(BTOUCH) --new-style -s:$(BINDINGS)/Structs.cs $(BINDINGS)/ApiDefinition.cs -x:$(BINDINGS)/LinkWith.cs  --out=$@ --link-with=$(TARGET).a,$(TARGET).a
 
 

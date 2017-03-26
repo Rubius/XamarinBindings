@@ -100,7 +100,7 @@ namespace WenchaoD.FSCalendarBindings
     }
 
     // @interface FSCalendarAppearance : NSObject
-    [BaseType(typeof(NSObject))]
+	[BaseType(typeof(NSObject))]
 	[Protocol]
     interface FSCalendarAppearance
     {
@@ -1425,54 +1425,54 @@ namespace WenchaoD.FSCalendarBindings
     }
 
     // @interface Dynamic (FSCalendarAppearance)
-    [BaseType(typeof(FSCalendarAppearance))]
-    [Protocol]
-    interface FSCalendarAppearance_Dynamic
-    {
-        // @property (readwrite, nonatomic) FSCalendar * calendar;
-        [Export("calendar", ArgumentSemantic.Assign)]
-        FSCalendar Calendar { get; set; }
+    //[BaseType(typeof(FSCalendarAppearance))]
+    //[Protocol]
+    //interface FSCalendarAppearance_Dynamic
+    //{
+    //    // @property (readwrite, nonatomic) FSCalendar * calendar;
+    //    [Export("calendar", ArgumentSemantic.Assign)]
+    //    FSCalendar Calendar { get; set; }
 
-        // @property (readonly, nonatomic) NSDictionary * backgroundColors;
-        [Export("backgroundColors")]
-        NSDictionary BackgroundColors { get; }
+    //    // @property (readonly, nonatomic) NSDictionary * backgroundColors;
+    //    [Export("backgroundColors")]
+    //    NSDictionary BackgroundColors { get; }
 
-        // @property (readonly, nonatomic) NSDictionary * titleColors;
-        [Export("titleColors")]
-        NSDictionary TitleColors { get; }
+    //    // @property (readonly, nonatomic) NSDictionary * titleColors;
+    //    [Export("titleColors")]
+    //    NSDictionary TitleColors { get; }
 
-        // @property (readonly, nonatomic) NSDictionary * subtitleColors;
-        [Export("subtitleColors")]
-        NSDictionary SubtitleColors { get; }
+    //    // @property (readonly, nonatomic) NSDictionary * subtitleColors;
+    //    [Export("subtitleColors")]
+    //    NSDictionary SubtitleColors { get; }
 
-        // @property (readonly, nonatomic) NSDictionary * borderColors;
-        [Export("borderColors")]
-        NSDictionary BorderColors { get; }
+    //    // @property (readonly, nonatomic) NSDictionary * borderColors;
+    //    [Export("borderColors")]
+    //    NSDictionary BorderColors { get; }
 
-        // @property (readonly, nonatomic) UIFont * preferredTitleFont;
-        [Export("preferredTitleFont")]
-        UIFont PreferredTitleFont { get; }
+    //    // @property (readonly, nonatomic) UIFont * preferredTitleFont;
+    //    [Export("preferredTitleFont")]
+    //    UIFont PreferredTitleFont { get; }
 
-        // @property (readonly, nonatomic) UIFont * preferredSubtitleFont;
-        [Export("preferredSubtitleFont")]
-        UIFont PreferredSubtitleFont { get; }
+    //    // @property (readonly, nonatomic) UIFont * preferredSubtitleFont;
+    //    [Export("preferredSubtitleFont")]
+    //    UIFont PreferredSubtitleFont { get; }
 
-        // @property (readonly, nonatomic) UIFont * preferredWeekdayFont;
-        [Export("preferredWeekdayFont")]
-        UIFont PreferredWeekdayFont { get; }
+    //    // @property (readonly, nonatomic) UIFont * preferredWeekdayFont;
+    //    [Export("preferredWeekdayFont")]
+    //    UIFont PreferredWeekdayFont { get; }
 
-        // @property (readonly, nonatomic) UIFont * preferredHeaderTitleFont;
-        [Export("preferredHeaderTitleFont")]
-        UIFont PreferredHeaderTitleFont { get; }
+    //    // @property (readonly, nonatomic) UIFont * preferredHeaderTitleFont;
+    //    [Export("preferredHeaderTitleFont")]
+    //    UIFont PreferredHeaderTitleFont { get; }
 
-        // -(void)adjustTitleIfNecessary;
-        [Export("adjustTitleIfNecessary")]
-        void AdjustTitleIfNecessary();
+    //    // -(void)adjustTitleIfNecessary;
+    //    [Export("adjustTitleIfNecessary")]
+    //    void AdjustTitleIfNecessary();
 
-        // -(void)invalidateFonts;
-        [Export("invalidateFonts")]
-        void InvalidateFonts();
-    }
+    //    // -(void)invalidateFonts;
+    //    [Export("invalidateFonts")]
+    //    void InvalidateFonts();
+    //}
 
     // @interface FSCalendarExtensions (UIView)
     [BaseType(typeof(UIView))]
