@@ -1,3 +1,3 @@
 using ObjCRuntime;
 
-[assembly: LinkWith ("libKLCPopup.a", SmartLink = true, ForceLoad = true)]
+[assembly: LinkWith ("KLCPopup.a", LinkTarget.i386 | LinkTarget.x86_64 | LinkTarget.Arm64 | LinkTarget.ArmV7 | LinkTarget.Simulator, SmartLink = true, ForceLoad = true, Frameworks = "NotificationCenter UIKit Foundation CoreGraphics", LinkerFlags = "-ObjC")]
