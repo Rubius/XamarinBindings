@@ -99,10 +99,10 @@ namespace WenchaoD.FSCalendarBindings
         //byte[] FSCalendarVersionString { get; }
     }
 
-    // @interface FSCalendarAppearance : NSObject
+    // @interface FSCalendar_Appearance : NSObject
 	[BaseType(typeof(NSObject))]
 	[Protocol]
-    interface FSCalendarAppearance
+    interface FSCalendar_Appearance
     {
         // @property (nonatomic, strong) UIFont * titleFont;
         [Export("titleFont", ArgumentSemantic.Strong)]
@@ -250,9 +250,9 @@ namespace WenchaoD.FSCalendarBindings
         [Export("calendar", ArgumentSemantic.Weak)]
         FSCalendar Calendar { get; set; }
 
-        // @property (nonatomic, weak) FSCalendarAppearance * appearance;
+        // @property (nonatomic, weak) FSCalendar_Appearance * appearance;
         //[Export("appearance", ArgumentSemantic.Weak)]
-        //FSCalendarAppearance Appearance { get; set; }
+        //FSCalendar_Appearance Appearance { get; set; }
 
         // @property (nonatomic, weak) UILabel * titleLabel;
         [Export("titleLabel", ArgumentSemantic.Weak)]
@@ -484,9 +484,9 @@ namespace WenchaoD.FSCalendarBindings
         [Export("calendar", ArgumentSemantic.Weak)]
         FSCalendar Calendar { get; set; }
 
-        // @property (nonatomic, weak) FSCalendarAppearance * appearance;
+        // @property (nonatomic, weak) FSCalendar_Appearance * appearance;
         //[Export("appearance", ArgumentSemantic.Weak)]
-        //FSCalendarAppearance Appearance { get; set; }
+        //FSCalendar_Appearance Appearance { get; set; }
 
         // @property (assign, nonatomic) CGFloat scrollOffset;
         [Export("scrollOffset")]
@@ -659,99 +659,99 @@ namespace WenchaoD.FSCalendarBindings
     [BaseType(typeof(NSObject))]
     interface FSCalendarDelegateAppearance
     {
-        // @optional -(UIColor * _Nullable)calendar:(FSCalendar * _Nonnull)calendar appearance:(FSCalendarAppearance * _Nonnull)appearance fillDefaultColorForDate:(NSDate * _Nonnull)date;
+        // @optional -(UIColor * _Nullable)calendar:(FSCalendar * _Nonnull)calendar appearance:(FSCalendar_Appearance * _Nonnull)appearance fillDefaultColorForDate:(NSDate * _Nonnull)date;
         [Export("calendar:appearance:fillDefaultColorForDate:")]
         [return: NullAllowed]
-        UIColor FillDefaultColorForDate(FSCalendar calendar, FSCalendarAppearance appearance, NSDate date);
+        UIColor FillDefaultColorForDate(FSCalendar calendar, FSCalendar_Appearance appearance, NSDate date);
 
-        // @optional -(UIColor * _Nullable)calendar:(FSCalendar * _Nonnull)calendar appearance:(FSCalendarAppearance * _Nonnull)appearance fillSelectionColorForDate:(NSDate * _Nonnull)date;
+        // @optional -(UIColor * _Nullable)calendar:(FSCalendar * _Nonnull)calendar appearance:(FSCalendar_Appearance * _Nonnull)appearance fillSelectionColorForDate:(NSDate * _Nonnull)date;
         [Export("calendar:appearance:fillSelectionColorForDate:")]
         [return: NullAllowed]
-        UIColor FillSelectionColorForDate(FSCalendar calendar, FSCalendarAppearance appearance, NSDate date);
+        UIColor FillSelectionColorForDate(FSCalendar calendar, FSCalendar_Appearance appearance, NSDate date);
 
-        // @optional -(UIColor * _Nullable)calendar:(FSCalendar * _Nonnull)calendar appearance:(FSCalendarAppearance * _Nonnull)appearance titleDefaultColorForDate:(NSDate * _Nonnull)date;
+        // @optional -(UIColor * _Nullable)calendar:(FSCalendar * _Nonnull)calendar appearance:(FSCalendar_Appearance * _Nonnull)appearance titleDefaultColorForDate:(NSDate * _Nonnull)date;
         [Export("calendar:appearance:titleDefaultColorForDate:")]
         [return: NullAllowed]
-        UIColor TitleDefaultColorForDate(FSCalendar calendar, FSCalendarAppearance appearance, NSDate date);
+        UIColor TitleDefaultColorForDate(FSCalendar calendar, FSCalendar_Appearance appearance, NSDate date);
 
-        // @optional -(UIColor * _Nullable)calendar:(FSCalendar * _Nonnull)calendar appearance:(FSCalendarAppearance * _Nonnull)appearance titleSelectionColorForDate:(NSDate * _Nonnull)date;
+        // @optional -(UIColor * _Nullable)calendar:(FSCalendar * _Nonnull)calendar appearance:(FSCalendar_Appearance * _Nonnull)appearance titleSelectionColorForDate:(NSDate * _Nonnull)date;
         [Export("calendar:appearance:titleSelectionColorForDate:")]
         [return: NullAllowed]
-        UIColor TitleSelectionColorForDate(FSCalendar calendar, FSCalendarAppearance appearance, NSDate date);
+        UIColor TitleSelectionColorForDate(FSCalendar calendar, FSCalendar_Appearance appearance, NSDate date);
 
-        // @optional -(UIColor * _Nullable)calendar:(FSCalendar * _Nonnull)calendar appearance:(FSCalendarAppearance * _Nonnull)appearance subtitleDefaultColorForDate:(NSDate * _Nonnull)date;
+        // @optional -(UIColor * _Nullable)calendar:(FSCalendar * _Nonnull)calendar appearance:(FSCalendar_Appearance * _Nonnull)appearance subtitleDefaultColorForDate:(NSDate * _Nonnull)date;
         [Export("calendar:appearance:subtitleDefaultColorForDate:")]
         [return: NullAllowed]
-        UIColor SubtitleDefaultColorForDate(FSCalendar calendar, FSCalendarAppearance appearance, NSDate date);
+        UIColor SubtitleDefaultColorForDate(FSCalendar calendar, FSCalendar_Appearance appearance, NSDate date);
 
-        // @optional -(UIColor * _Nullable)calendar:(FSCalendar * _Nonnull)calendar appearance:(FSCalendarAppearance * _Nonnull)appearance subtitleSelectionColorForDate:(NSDate * _Nonnull)date;
+        // @optional -(UIColor * _Nullable)calendar:(FSCalendar * _Nonnull)calendar appearance:(FSCalendar_Appearance * _Nonnull)appearance subtitleSelectionColorForDate:(NSDate * _Nonnull)date;
         [Export("calendar:appearance:subtitleSelectionColorForDate:")]
         [return: NullAllowed]
-        UIColor SubtitleSelectionColorForDate(FSCalendar calendar, FSCalendarAppearance appearance, NSDate date);
+        UIColor SubtitleSelectionColorForDate(FSCalendar calendar, FSCalendar_Appearance appearance, NSDate date);
 
-        // @optional -(NSArray<UIColor *> * _Nullable)calendar:(FSCalendar * _Nonnull)calendar appearance:(FSCalendarAppearance * _Nonnull)appearance eventDefaultColorsForDate:(NSDate * _Nonnull)date;
+        // @optional -(NSArray<UIColor *> * _Nullable)calendar:(FSCalendar * _Nonnull)calendar appearance:(FSCalendar_Appearance * _Nonnull)appearance eventDefaultColorsForDate:(NSDate * _Nonnull)date;
         [Export("calendar:appearance:eventDefaultColorsForDate:")]
         [return: NullAllowed]
-        UIColor[] EventDefaultColorsForDate(FSCalendar calendar, FSCalendarAppearance appearance, NSDate date);
+        UIColor[] EventDefaultColorsForDate(FSCalendar calendar, FSCalendar_Appearance appearance, NSDate date);
 
-        // @optional -(NSArray<UIColor *> * _Nullable)calendar:(FSCalendar * _Nonnull)calendar appearance:(FSCalendarAppearance * _Nonnull)appearance eventSelectionColorsForDate:(NSDate * _Nonnull)date;
+        // @optional -(NSArray<UIColor *> * _Nullable)calendar:(FSCalendar * _Nonnull)calendar appearance:(FSCalendar_Appearance * _Nonnull)appearance eventSelectionColorsForDate:(NSDate * _Nonnull)date;
         [Export("calendar:appearance:eventSelectionColorsForDate:")]
         [return: NullAllowed]
-        UIColor[] EventSelectionColorsForDate(FSCalendar calendar, FSCalendarAppearance appearance, NSDate date);
+        UIColor[] EventSelectionColorsForDate(FSCalendar calendar, FSCalendar_Appearance appearance, NSDate date);
 
-        // @optional -(UIColor * _Nullable)calendar:(FSCalendar * _Nonnull)calendar appearance:(FSCalendarAppearance * _Nonnull)appearance borderDefaultColorForDate:(NSDate * _Nonnull)date;
+        // @optional -(UIColor * _Nullable)calendar:(FSCalendar * _Nonnull)calendar appearance:(FSCalendar_Appearance * _Nonnull)appearance borderDefaultColorForDate:(NSDate * _Nonnull)date;
         [Export("calendar:appearance:borderDefaultColorForDate:")]
         [return: NullAllowed]
-        UIColor BorderDefaultColorForDate(FSCalendar calendar, FSCalendarAppearance appearance, NSDate date);
+        UIColor BorderDefaultColorForDate(FSCalendar calendar, FSCalendar_Appearance appearance, NSDate date);
 
-        // @optional -(UIColor * _Nullable)calendar:(FSCalendar * _Nonnull)calendar appearance:(FSCalendarAppearance * _Nonnull)appearance borderSelectionColorForDate:(NSDate * _Nonnull)date;
+        // @optional -(UIColor * _Nullable)calendar:(FSCalendar * _Nonnull)calendar appearance:(FSCalendar_Appearance * _Nonnull)appearance borderSelectionColorForDate:(NSDate * _Nonnull)date;
         [Export("calendar:appearance:borderSelectionColorForDate:")]
         [return: NullAllowed]
-        UIColor BorderSelectionColorForDate(FSCalendar calendar, FSCalendarAppearance appearance, NSDate date);
+        UIColor BorderSelectionColorForDate(FSCalendar calendar, FSCalendar_Appearance appearance, NSDate date);
 
-        // @optional -(CGPoint)calendar:(FSCalendar * _Nonnull)calendar appearance:(FSCalendarAppearance * _Nonnull)appearance titleOffsetForDate:(NSDate * _Nonnull)date;
+        // @optional -(CGPoint)calendar:(FSCalendar * _Nonnull)calendar appearance:(FSCalendar_Appearance * _Nonnull)appearance titleOffsetForDate:(NSDate * _Nonnull)date;
         [Export("calendar:appearance:titleOffsetForDate:")]
-        CGPoint TitleOffsetForDate(FSCalendar calendar, FSCalendarAppearance appearance, NSDate date);
+        CGPoint TitleOffsetForDate(FSCalendar calendar, FSCalendar_Appearance appearance, NSDate date);
 
-        // @optional -(CGPoint)calendar:(FSCalendar * _Nonnull)calendar appearance:(FSCalendarAppearance * _Nonnull)appearance subtitleOffsetForDate:(NSDate * _Nonnull)date;
+        // @optional -(CGPoint)calendar:(FSCalendar * _Nonnull)calendar appearance:(FSCalendar_Appearance * _Nonnull)appearance subtitleOffsetForDate:(NSDate * _Nonnull)date;
         [Export("calendar:appearance:subtitleOffsetForDate:")]
-        CGPoint SubtitleOffsetForDate(FSCalendar calendar, FSCalendarAppearance appearance, NSDate date);
+        CGPoint SubtitleOffsetForDate(FSCalendar calendar, FSCalendar_Appearance appearance, NSDate date);
 
-        // @optional -(CGPoint)calendar:(FSCalendar * _Nonnull)calendar appearance:(FSCalendarAppearance * _Nonnull)appearance imageOffsetForDate:(NSDate * _Nonnull)date;
+        // @optional -(CGPoint)calendar:(FSCalendar * _Nonnull)calendar appearance:(FSCalendar_Appearance * _Nonnull)appearance imageOffsetForDate:(NSDate * _Nonnull)date;
         [Export("calendar:appearance:imageOffsetForDate:")]
-        CGPoint ImageOffsetForDate(FSCalendar calendar, FSCalendarAppearance appearance, NSDate date);
+        CGPoint ImageOffsetForDate(FSCalendar calendar, FSCalendar_Appearance appearance, NSDate date);
 
-        // @optional -(CGPoint)calendar:(FSCalendar * _Nonnull)calendar appearance:(FSCalendarAppearance * _Nonnull)appearance eventOffsetForDate:(NSDate * _Nonnull)date;
+        // @optional -(CGPoint)calendar:(FSCalendar * _Nonnull)calendar appearance:(FSCalendar_Appearance * _Nonnull)appearance eventOffsetForDate:(NSDate * _Nonnull)date;
         [Export("calendar:appearance:eventOffsetForDate:")]
-        CGPoint EventOffsetForDate(FSCalendar calendar, FSCalendarAppearance appearance, NSDate date);
+        CGPoint EventOffsetForDate(FSCalendar calendar, FSCalendar_Appearance appearance, NSDate date);
 
-        // @optional -(CGFloat)calendar:(FSCalendar * _Nonnull)calendar appearance:(FSCalendarAppearance * _Nonnull)appearance borderRadiusForDate:(NSDate * _Nonnull)date;
+        // @optional -(CGFloat)calendar:(FSCalendar * _Nonnull)calendar appearance:(FSCalendar_Appearance * _Nonnull)appearance borderRadiusForDate:(NSDate * _Nonnull)date;
         [Export("calendar:appearance:borderRadiusForDate:")]
-        nfloat BorderRadiusForDate(FSCalendar calendar, FSCalendarAppearance appearance, NSDate date);
+        nfloat BorderRadiusForDate(FSCalendar calendar, FSCalendar_Appearance appearance, NSDate date);
 
-        // @optional -(UIColor * _Nullable)calendar:(FSCalendar * _Nonnull)calendar appearance:(FSCalendarAppearance * _Nonnull)appearance fillColorForDate:(NSDate * _Nonnull)date __attribute__((deprecated(" Use -calendar:appearance:fillDefaultColorForDate: instead")));
+        // @optional -(UIColor * _Nullable)calendar:(FSCalendar * _Nonnull)calendar appearance:(FSCalendar_Appearance * _Nonnull)appearance fillColorForDate:(NSDate * _Nonnull)date __attribute__((deprecated(" Use -calendar:appearance:fillDefaultColorForDate: instead")));
         [Export("calendar:appearance:fillColorForDate:")]
         [return: NullAllowed]
-        UIColor FillColorForDate(FSCalendar calendar, FSCalendarAppearance appearance, NSDate date);
+        UIColor FillColorForDate(FSCalendar calendar, FSCalendar_Appearance appearance, NSDate date);
 
-        // @optional -(UIColor * _Nullable)calendar:(FSCalendar * _Nonnull)calendar appearance:(FSCalendarAppearance * _Nonnull)appearance selectionColorForDate:(NSDate * _Nonnull)date __attribute__((deprecated(" Use -calendar:appearance:fillSelectionColorForDate: instead")));
+        // @optional -(UIColor * _Nullable)calendar:(FSCalendar * _Nonnull)calendar appearance:(FSCalendar_Appearance * _Nonnull)appearance selectionColorForDate:(NSDate * _Nonnull)date __attribute__((deprecated(" Use -calendar:appearance:fillSelectionColorForDate: instead")));
         [Export("calendar:appearance:selectionColorForDate:")]
         [return: NullAllowed]
-        UIColor SelectionColorForDate(FSCalendar calendar, FSCalendarAppearance appearance, NSDate date);
+        UIColor SelectionColorForDate(FSCalendar calendar, FSCalendar_Appearance appearance, NSDate date);
 
-        // @optional -(UIColor * _Nullable)calendar:(FSCalendar * _Nonnull)calendar appearance:(FSCalendarAppearance * _Nonnull)appearance eventColorForDate:(NSDate * _Nonnull)date __attribute__((deprecated(" Use -calendar:appearance:eventDefaultColorsForDate: instead")));
+        // @optional -(UIColor * _Nullable)calendar:(FSCalendar * _Nonnull)calendar appearance:(FSCalendar_Appearance * _Nonnull)appearance eventColorForDate:(NSDate * _Nonnull)date __attribute__((deprecated(" Use -calendar:appearance:eventDefaultColorsForDate: instead")));
         [Export("calendar:appearance:eventColorForDate:")]
         [return: NullAllowed]
-        UIColor EventColorForDate(FSCalendar calendar, FSCalendarAppearance appearance, NSDate date);
+        UIColor EventColorForDate(FSCalendar calendar, FSCalendar_Appearance appearance, NSDate date);
 
-        // @optional -(NSArray * _Nullable)calendar:(FSCalendar * _Nonnull)calendar appearance:(FSCalendarAppearance * _Nonnull)appearance eventColorsForDate:(NSDate * _Nonnull)date __attribute__((deprecated(" Use -calendar:appearance:eventDefaultColorsForDate: instead")));
+        // @optional -(NSArray * _Nullable)calendar:(FSCalendar * _Nonnull)calendar appearance:(FSCalendar_Appearance * _Nonnull)appearance eventColorsForDate:(NSDate * _Nonnull)date __attribute__((deprecated(" Use -calendar:appearance:eventDefaultColorsForDate: instead")));
         [Export("calendar:appearance:eventColorsForDate:")]
         [return: NullAllowed]
-        NSObject[] EventColorsForDate(FSCalendar calendar, FSCalendarAppearance appearance, NSDate date);
+        NSObject[] EventColorsForDate(FSCalendar calendar, FSCalendar_Appearance appearance, NSDate date);
 
-        // @optional -(FSCalendarCellShape)calendar:(FSCalendar * _Nonnull)calendar appearance:(FSCalendarAppearance * _Nonnull)appearance cellShapeForDate:(NSDate * _Nonnull)date __attribute__((deprecated(" Use -calendar:appearance:borderRadiusForDate: instead")));
+        // @optional -(FSCalendarCellShape)calendar:(FSCalendar * _Nonnull)calendar appearance:(FSCalendar_Appearance * _Nonnull)appearance cellShapeForDate:(NSDate * _Nonnull)date __attribute__((deprecated(" Use -calendar:appearance:borderRadiusForDate: instead")));
         [Export("calendar:appearance:cellShapeForDate:")]
-        FSCalendarCellShape CellShapeForDate(FSCalendar calendar, FSCalendarAppearance appearance, NSDate date);
+        FSCalendarCellShape CellShapeForDate(FSCalendar calendar, FSCalendar_Appearance appearance, NSDate date);
     }
 
     // @interface FSCalendar : UIView
@@ -846,9 +846,9 @@ namespace WenchaoD.FSCalendarBindings
         [Export("lineHeightMultiplier")]
         nfloat LineHeightMultiplier { get; set; }
 
-        // @property (readonly, nonatomic) FSCalendarAppearance * _Nonnull appearance;
+        // @property (readonly, nonatomic) FSCalendar_Appearance * _Nonnull appearance;
         [Export("appearance")]
-        FSCalendarAppearance CalendarAppearance { get; }
+        FSCalendar_Appearance CalendarAppearance { get; }
 
         // @property (readonly, nonatomic) NSDate * _Nonnull minimumDate;
         [Export("minimumDate")]
@@ -1273,9 +1273,9 @@ namespace WenchaoD.FSCalendarBindings
         [Export("calendar", ArgumentSemantic.Weak)]
         FSCalendar Calendar { get; set; }
 
-        // @property (nonatomic, weak) FSCalendarAppearance * appearance;
+        // @property (nonatomic, weak) FSCalendar_Appearance * appearance;
         [Export("appearance", ArgumentSemantic.Weak)]
-        FSCalendarAppearance CalendarAppearance { get; set; }
+        FSCalendar_Appearance CalendarAppearance { get; set; }
 
         // @property (nonatomic, weak) UILabel * titleLabel;
         [Export("titleLabel", ArgumentSemantic.Weak)]
@@ -1424,10 +1424,10 @@ namespace WenchaoD.FSCalendarBindings
         CGSize SizeThatFits(CGSize size, FSCalendarScope scope);
     }
 
-    // @interface Dynamic (FSCalendarAppearance)
-    //[BaseType(typeof(FSCalendarAppearance))]
+    // @interface Dynamic (FSCalendar_Appearance)
+    //[BaseType(typeof(FSCalendar_Appearance))]
     //[Protocol]
-    //interface FSCalendarAppearance_Dynamic
+    //interface FSCalendar_Appearance_Dynamic
     //{
     //    // @property (readwrite, nonatomic) FSCalendar * calendar;
     //    [Export("calendar", ArgumentSemantic.Assign)]
