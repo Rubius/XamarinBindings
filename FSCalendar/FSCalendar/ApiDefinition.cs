@@ -5,7 +5,7 @@ using Foundation;
 using ObjCRuntime;
 using UIKit;
 
-namespace WenchaoD.FSCalendarBindings
+namespace WenchaoD.FSCalendar
 {
     [Static]
     partial interface Constants
