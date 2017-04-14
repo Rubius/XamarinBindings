@@ -1,0 +1,5 @@
+/Users/admin/Projects/XamarinBindings/SHSPhoneComponent/obj/Debug/Xamarin.iOS,Version=v1.0.AssemblyAttribute.cs
+/Users/admin/Projects/XamarinBindings/SHSPhoneComponent/bin/Debug/SHSPhoneComponent.dll.mdb
+/Users/admin/Projects/XamarinBindings/SHSPhoneComponent/bin/Debug/SHSPhoneComponent.dll
+/Users/admin/Projects/XamarinBindings/SHSPhoneComponent/obj/Debug/SHSPhoneComponent.dll
+/Users/admin/Projects/XamarinBindings/SHSPhoneComponent/obj/Debug/SHSPhoneComponent.dll.mdb

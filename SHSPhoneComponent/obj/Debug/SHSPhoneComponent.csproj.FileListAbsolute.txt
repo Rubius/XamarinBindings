@@ -1,0 +1,6 @@
+/Users/admin/Projects/XamarinBindings/SHSPhoneComponent/bin/Debug/SHSPhoneComponent.dll
+/Users/admin/Projects/XamarinBindings/SHSPhoneComponent/bin/Debug/SHSPhoneComponent.dll.mdb
+/Users/admin/Projects/XamarinBindings/SHSPhoneComponent/obj/Debug/SHSPhoneComponent.csprojResolveAssemblyReference.cache
+/Users/admin/Projects/XamarinBindings/SHSPhoneComponent/obj/Debug/SHSPhoneComponent.csproj.CoreCompileInputs.cache
+/Users/admin/Projects/XamarinBindings/SHSPhoneComponent/obj/Debug/SHSPhoneComponent.dll
+/Users/admin/Projects/XamarinBindings/SHSPhoneComponent/obj/Debug/SHSPhoneComponent.dll.mdb

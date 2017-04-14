@@ -1,0 +1,6 @@
+framework module SHSPhoneComponent {
+  umbrella header "SHSPhoneComponent.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,3 @@
+/Users/admin/Projects/XamarinBindings/SHSPhoneComponent2/obj/Release/Xamarin.iOS,Version=v1.0.AssemblyAttribute.cs
+/Users/admin/Projects/XamarinBindings/SHSPhoneComponent2/bin/Release/SHSPhoneComponent2.dll
+/Users/admin/Projects/XamarinBindings/SHSPhoneComponent2/obj/Release/SHSPhoneComponent2.dll
