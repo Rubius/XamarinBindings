@@ -1,4 +1,0 @@
-/Users/admin/Projects/XamarinBindings/SHSPhoneComponent/bin/Release/SHSPhoneComponent.dll
-/Users/admin/Projects/XamarinBindings/SHSPhoneComponent/obj/Release/SHSPhoneComponent.csprojResolveAssemblyReference.cache
-/Users/admin/Projects/XamarinBindings/SHSPhoneComponent/obj/Release/SHSPhoneComponent.csproj.CoreCompileInputs.cache
-/Users/admin/Projects/XamarinBindings/SHSPhoneComponent/obj/Release/SHSPhoneComponent.dll
