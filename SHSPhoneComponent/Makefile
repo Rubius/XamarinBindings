@@ -11,7 +11,7 @@ $(TARGET)-sim.framework:
 	-mv $(PROJECT_ROOT)/build/Release-iphonesimulator/$(TARGET).framework $@
 
 $(TARGET)-iphone.framework:
-	$(XBUILD) ONLY_ACTIVE_ARCH=NO -project $(PROJECT) -target $(TARGET) -sdk iphoneos -arch armv7 -configuration Release clean build
+	$(XBUILD) ONLY_ACTIVE_ARCH=NO -project $(PROJECT) -target $(TARGET) -sdk iphoneos -configuration Release clean build
 	-mv $(PROJECT_ROOT)/build/Release-iphoneos/$(TARGET).framework $@
 
 $(TARGET).framework: $(TARGET)-sim.framework $(TARGET)-iphone.framework
@@ -19,7 +19,7 @@ $(TARGET).framework: $(TARGET)-sim.framework $(TARGET)-iphone.framework
 	rm $@/$(TARGET)
 	lipo -create -output $@/$(TARGET) $(TARGET)-sim.framework/$(TARGET) $(TARGET)-iphone.framework/$(TARGET)
 
-$(TARGET).dll: ApiDefinitions.cs $(TARGET).framework
+$(TARGET).dll: ApiDefinition.cs $(TARGET).framework
 	msbuild /p:Configuration=Release
 	cp bin/Release/$(TARGET).dll $(TARGET).dll
 
