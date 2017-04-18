@@ -7,11 +7,11 @@ TARGET=SHSPhoneComponent
 all: $(TARGET).dll
 
 $(TARGET)-sim.framework:
-	$(XBUILD) ONLY_ACTIVE_ARCH=NO -project $(PROJECT) -target $(TARGET) -sdk iphonesimulator -configuration Release clean build
+	$(XBUILD) ONLY_ACTIVE_ARCH=NO OTHER_CFLAGS="-fembed-bitcode" -project $(PROJECT) -target $(TARGET) -sdk iphonesimulator -configuration Release clean build
 	-mv $(PROJECT_ROOT)/build/Release-iphonesimulator/$(TARGET).framework $@
 
 $(TARGET)-iphone.framework:
-	$(XBUILD) ONLY_ACTIVE_ARCH=NO -project $(PROJECT) -target $(TARGET) -sdk iphoneos -configuration Release clean build
+	$(XBUILD) ONLY_ACTIVE_ARCH=NO OTHER_CFLAGS="-fembed-bitcode" -project $(PROJECT) -target $(TARGET) -sdk iphoneos -configuration Release clean build
 	-mv $(PROJECT_ROOT)/build/Release-iphoneos/$(TARGET).framework $@
 
 $(TARGET).framework: $(TARGET)-sim.framework $(TARGET)-iphone.framework
